@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 
-
-* {
 /*elimina cualquier margen y relleno predeterminado*/
+* {
     margin: 0;
     padding: 0;
 }
 
-
 h1, h2 {
-    font-weight: bold;  
+    font-weight: 200;  
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -19,7 +18,7 @@ h1 {
     font-family: 'Russo One', sans-serif;
 }
 
-h2 {
+h2, h3 {
     color: white;
     font-style: italic;
     font-family: 'Prompt';
@@ -30,28 +29,28 @@ p{
     font-family: 'Prompt';
 }
 
-body {
-    
-}
+
+
+/*ID*/
 
 #cabecera {
     background-color: #090030;
     
 }
 
-#nosotros {
+#nosotros, #programas {
     background-color: #04879C;
 }
-
 
 #servicios {
     background-color: #090030;
 }
 
-
 #pie {
     background-color: #04879C;    
 }
+
+/*CLASSES*/
 
 .espaciado {
     padding-top: 60px;
@@ -62,5 +61,18 @@ body {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.fila {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
