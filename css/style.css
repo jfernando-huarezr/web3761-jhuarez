@@ -84,3 +84,21 @@ ul {
     font-weight: bold;
     padding: 2px 10px;
 }
+
+#cabecera {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/parallax-5.jpg'); /* Replace 'path/to/image.jpg' with the actual path to your image file */
+    background-repeat: no-repeat;
+    background-size: cover; /* Use cover value to fill the block with the background image */
+    background-position:50% 90%;
+    height: 25em;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.cabecera__contenedor{
+    display: flex;
+    /*flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;*/
+}
