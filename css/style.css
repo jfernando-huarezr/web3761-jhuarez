@@ -1,0 +1,73 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+  /*font-family: 'Gilda Display', serif;*/
+  /*font-family: 'Roboto', sans-serif;*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nvg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.nvg__izq, .nvg__der{
+    display:flex
+}
+
+.nvg__izq{
+    justify-content: flex-start;
+
+}
+
+.nvg__der{
+    justify-content: flex-end;
+ 
+}
+
+.icon-message {
+    max-width: 1.25em;
+}
+
+.avatar-img {
+    max-width: 2.5em;
+}
+
+.logo-img {
+    max-width: 12em;
+}
+
+#nav-main {
+    background-color: white;
+}
+
+#nav-sec{
+    background-color: black;
+}
+
+.nav-main__item{
+    color: #5c5c5c;
+    padding: 1em;
+}
+
+.nav-sec__item{
+    color: white;
+    padding: 1em;
+}
+
+.nav-main__item--account {
+    background-color: #c19c76;
+}
