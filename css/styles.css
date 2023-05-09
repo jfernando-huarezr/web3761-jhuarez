@@ -34,20 +34,19 @@ p{
 /*ID*/
 
 #cabecera {
-    background-color: #090030;
-    
+    background-color: #090030;    
 }
 
-#nosotros, #programas {
+#nosotros, #programas, #pie {
     background-color: #04879C;
 }
 
-#servicios {
+#servicios, #alumnos {
     background-color: #090030;
 }
 
-#pie {
-    background-color: #04879C;    
+#banner img{
+    display: block;
 }
 
 /*CLASSES*/
@@ -76,8 +75,7 @@ p{
     padding-right: 15px;
 }
 
-.ajustar_ancho {
+.ajustar_ancho {  /*ajusta ancho con respecto de la caja padre*/
     width: 100%;
-    height: auto;
 }
 
