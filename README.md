@@ -1,5 +1,5 @@
-# Curso Diseno WEB 3761 - ISIL - 2023-01
+# Proyecto Diseno WEB 3761 - ISIL 2023-01 - Grupo 5 
 
-Curso de Diseno Web de la Isil, ciclo 2023-1. Diseno web con elementos de HTML y CSS.
+Proyecto de Diseno Web ISIL ciclo 2023-1. Grupo 5. Diseno web con elementos de HTML y CSS.
 
 Jose Fernando Huarez Reyes
