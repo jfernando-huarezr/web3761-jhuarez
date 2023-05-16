@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/*https://www.dafont.com/es/*/
+/*declaracion de variables para css*/
+:root {
+    /*paleta de colores*/
+    --color1:#ffff;
+    --color2:#0000;
+    --color3:#090030;
+    --color4:#04879C;
 
+    --fuentePrincipal:'Russo One', sans-serif;
+    --fuenteSecundaria:'Prompt';
+}
 
 /*elimina cualquier margen y relleno predeterminado*/
 * {
@@ -15,18 +26,18 @@ h1, h2 {
 
 h1 {
     color: white;
-    font-family: 'Russo One', sans-serif;
+    font-family: var(--fuentePrincipal)
 }
 
 h2, h3 {
     color: white;
     font-style: italic;
-    font-family: 'Prompt';
+    font-family: var(--fuenteSecundaria)
 }
 
 p{
     color: white;
-    font-family: 'Prompt';
+    font-family: var(--fuenteSecundaria)
 }
 
 
@@ -34,19 +45,27 @@ p{
 /*ID*/
 
 #cabecera {
-    background-color: #090030;    
+    background-color: var(--color3);    
 }
 
 #nosotros, #programas, #pie {
-    background-color: #04879C;
+    background-color: var(--color4);
 }
 
-#servicios, #alumnos {
-    background-color: #090030;
+#servicios, #alumnos, #graduacion {
+    background-color: var(--color3);
 }
 
 #banner img{
     display: block;
+}
+
+#graduacion {
+    background-image: url("../img/graduacion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center right;
+    background-attachment: fixed;
 }
 
 /*CLASSES*/
@@ -77,5 +96,10 @@ p{
 
 .ajustar_ancho {  /*ajusta ancho con respecto de la caja padre*/
     width: 100%;
+}
+
+.texto-enorme {
+    font-size: 40px;
+    font-weight: 500;
 }
 
