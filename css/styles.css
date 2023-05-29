@@ -40,6 +40,14 @@ p{
     font-family: var(--fuenteSecundaria)
 }
 
+h2 {
+    text-shadow: 4px 4px 4px rgba(94,91,188,0.7);
+}
+
+p {
+    line-height: 1.5;
+}
+
 
 
 /*ID*/
@@ -68,6 +76,21 @@ p{
     background-attachment: fixed;
 }
 
+#alumnos img {
+    border: 5px outset #5e5bbc;
+    border-radius: 45px 45px 45px 45px;
+}
+
+#pie .fila {
+    justify-content: space-between;
+}
+
+#pie i {
+    font-size: 32px;
+    margin-left: 10px;
+    color: white;
+}
+
 /*CLASSES*/
 
 .espaciado {
@@ -83,15 +106,13 @@ p{
 
 .fila {
     display: flex;
-    margin-left: -15px;
-    margin-right: -15px;
+    gap: 20px;
 }
 
 .columna {
     flex-basis: 0;
     flex-grow: 1;
-    padding-left: 15px;
-    padding-right: 15px;
+
 }
 
 .ajustar_ancho {  /*ajusta ancho con respecto de la caja padre*/
