@@ -48,8 +48,10 @@ p {
     line-height: 1.5;
 }
 
-
-
+a {
+    color : var(--color1);
+    text-decoration: none; /*quitar la decoracion de este item */
+}
 /*ID*/
 
 #cabecera {
@@ -82,7 +84,7 @@ p {
 }
 
 #pie .fila {
-    justify-content: space-between;
+   justify-content: space-between;
 }
 
 #pie i {
@@ -91,7 +93,7 @@ p {
     color: white;
 }
 
-/*CLASSES*/
+/*CLASSES*/ 
 
 .espaciado {
     padding-top: 60px;
@@ -105,14 +107,19 @@ p {
 }
 
 .fila {
-    display: flex;
-    gap: 20px;
+    display: flex;  /* Activar FlexBox */
+    flex-direction: row;  /* Coloca el contenido de izquierda a derecha */
+
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .columna {
     flex-basis: 0;
     flex-grow: 1;
 
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .ajustar_ancho {  /*ajusta ancho con respecto de la caja padre*/
@@ -123,4 +130,3 @@ p {
     font-size: 40px;
     font-weight: 500;
 }
-
