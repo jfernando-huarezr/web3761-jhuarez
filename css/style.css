@@ -10,6 +10,7 @@
     --color2:#EDFFFD;
     --color3: #828282;
     --color4:#d8d8d8;
+    --color5:#000080;
 
     /*fuentes*/
 
@@ -22,6 +23,8 @@
     margin: 0;
     padding: 0;
 }
+
+/*ID*/
 
 #cabecera {
     background-color: var(--color1);
@@ -111,6 +114,11 @@ p {
     color: var(--color3);
 }
 
+.style--color-white {
+    color: var(--colorwhite);
+    text-shadow: 0px 0px 7px rgba(0,0,0,0.8);
+}
+
 .big-text{
     font-size: 2.5rem ;
 }
@@ -162,6 +170,7 @@ p {
 
 .sin-negrita{
     font-weight: normal;
+    color: var(--color5);
 }
 
 .color-texto-encabezado {
