@@ -55,7 +55,40 @@ a {
 /*ID*/
 
 #cabecera {
-    background-color: var(--color3);    
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: var(--fuentePrincipal);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: sticky;
+    top: 0px
+}
+
+#cabecera a {
+    color: var(--color3);  
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;/*animacion al pasar el mouse del cambio de color*/
+}
+
+#cabecera a:hover {
+    color: var(--color1);
+    background-color: var(--color4);  
+}
+
+
+#cabecera .menu-opciones {
+    list-style-type: none;
+}
+
+#cabecera .logo {
+    width: 100px;
+    height: auto;
+}
+
+#cabecera .fila {
+    justify-content: space-between;
+    align-items: center; /*alineacion vertical elementos flexbox*/
 }
 
 #nosotros, #programas, #pie {
