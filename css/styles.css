@@ -19,6 +19,11 @@
     padding: 0;
 }
 
+body {
+    font-size: 18px;
+    font-family: var(--fuentePrincipal);
+}
+
 h1, h2 {
     font-weight: 200;  
     margin-bottom: 10px;
@@ -53,6 +58,22 @@ a {
     text-decoration: none; /*quitar la decoracion de este item */
 }
 /*ID*/
+#barra-superior {
+    background-color: var(--color4);
+    color: var(--color1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.8em; /*mismo tamaño fuente caja padre, en este caso body. el tamaño por defecto es 16px*/
+}
+
+#barra-superior a {
+    margin-right: 10px;
+}
+
+#barra-superior .fila {
+    justify-content: space-between;
+    align-items: center; /*alineacion vertical elementos flexbox*/
+}
 
 #cabecera {
     background-color: rgba(255, 255, 255, 0.8);
@@ -61,7 +82,8 @@ a {
     padding-bottom: 10px;
 
     position: sticky;
-    top: 0px
+    top: 0px;
+    z-index:9999;
 }
 
 #cabecera a {
@@ -114,6 +136,23 @@ a {
 #alumnos img {
     border: 5px outset #5e5bbc;
     border-radius: 45px 45px 45px 45px;
+    
+}
+
+#alumnos .columna:first-child img {
+    filter: grayscale(100%);
+}
+
+#alumnos .columna:nth-child(2) img {
+    filter: sepia(100%);
+}
+
+#alumnos .columna:nth-child(3) img {
+    filter: brightness(101%) saturate(378%) contrast(168%);
+}
+
+#alumnos .columna:last-child img {
+    filter: grayscale(100%) blur(1px) hue-rotate(173deg) opacity(39%);
 }
 
 #pie .fila {
@@ -124,6 +163,20 @@ a {
     font-size: 32px;
     margin-left: 10px;
     color: white;
+}
+
+#eventos {
+    background-color: var(--color3);
+    color: var(--color1);
+}
+
+#eventos img{
+    transition: all 0.3s ease-in-out;
+}
+
+#eventos img:hover{
+    transform: scale(1.05);
+    
 }
 
 /*CLASSES*/ 
@@ -162,4 +215,8 @@ a {
 .texto-enorme {
     font-size: 40px;
     font-weight: 500;
+}
+
+.eventos-foto {
+    overflow: hidden;
 }
