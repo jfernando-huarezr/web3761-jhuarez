@@ -67,6 +67,7 @@ ul{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    background-attachment: fixed;
     color: var(--blanco);
     padding: 50px;
     text-align: center;
