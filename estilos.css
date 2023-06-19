@@ -92,9 +92,25 @@ ul{
     color: var(--blanco);
 }
 
+#habitaciones .columna:hover {
+    filter: grayscale(22%) sepia(12%) hue-rotate(11deg) saturate(201%) contrast(99%) invert(6%) blur(0px);
+}
+
+.blurred:hover .columna {
+    filter: blur(6px);
+}
+
 #otros_servicios {
     background-color: var(--blanco);
     color: var(--grisoscuro_texto);
+}
+
+#otros_servicios img { 
+    transition: all 0.3s ease-in-out;
+}
+
+#otros_servicios img:hover {
+    transform: scale(1.05);
 }
 
 #pie {
