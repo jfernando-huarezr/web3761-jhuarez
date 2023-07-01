@@ -17,6 +17,13 @@
 * {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box; /* Establece el width sea el ancho final de la caja (incluendo padding y border */
+    /*siempe es bueno ponerlo aqui par que los cambios en paddings y margins no afecten la visualizacion de la pagina*/
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,7 +33,7 @@ body {
 
 h1, h2 {
     font-weight: 200;  
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -47,6 +54,25 @@ p{
 
 h2 {
     text-shadow: 4px 4px 4px rgba(94,91,188,0.7);
+    position: relative;
+    text-align: center;
+}
+
+/*h2::before {
+    content: "<<" /*cosas que salen antes de una etiqueta h2
+}*/
+
+
+h2::after {
+    content : "";
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% -  50px);
+
+    /*barrita*/
+    background-color: var(--color3);
+    width: 100px;
+    height: 2px;
 }
 
 p {
@@ -58,6 +84,29 @@ a {
     text-decoration: none; /*quitar la decoracion de este item */
 }
 /*ID*/
+#button-go-top {
+    width: 45px;
+    height: 45px;
+    background-color: var(--color4);
+    color: var(--color1);
+    border: 1px solid var(--color1);
+
+    /*posicionamiento de caja*/
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    line-height: 45px; /*para centrar verticalmente. Si le pongo la misma altura de la caja (en este caso 45px), lo centra*/
+    transition: all 0.3s ease-in-out;
+}
+
+#button-go-top:hover {  /*efectos para el boton para ir al top de la pagina*/
+    background-color: var(--color3);
+    transform: translateY(-5px);
+    box-shadow: -3px 8px 15px 0px var(--color2);
+
+}
+
 #barra-superior {
     background-color: var(--color4);
     color: var(--color1);
@@ -86,14 +135,14 @@ a {
     z-index:9999;
 }
 
-#cabecera a {
+#cabecera .menu-opciones a {
     color: var(--color3);  
     padding: 10px 15px;
     border-radius: 25px;
     transition: all 0.3s ease-in-out;/*animacion al pasar el mouse del cambio de color*/
 }
 
-#cabecera a:hover {
+#cabecera .menu-opciones a:hover {
     color: var(--color1);
     background-color: var(--color4);  
 }
@@ -121,9 +170,23 @@ a {
     background-color: var(--color3);
 }
 
+#banner {
+    position: relative;
+}
+
 #banner img{
     display: block;
 }
+
+#admision {
+    position: absolute;
+    bottom: -80px; /* top / bottom */
+    left: 35%; /* mitad de la caja padre (50%) menos mitad caja hijo (15%)*/
+    width: 30%; /*con respecto al nacho de su caja padre*/
+    background-color: var(--color3);
+    padding: 30px;
+}
+
 
 #graduacion {
     background-image: url("../img/graduacion.jpg");
@@ -170,13 +233,44 @@ a {
     color: var(--color1);
 }
 
-#eventos img{
+/*#eventos img{
     transition: all 0.3s ease-in-out;
 }
 
 #eventos img:hover{
     transform: scale(1.05);
     
+}*/
+
+#valores {
+    background-color: var(--color4);
+    color: var(--color4);
+    text-align: center;
+}
+
+#valores .columna { /*columnas dentro de el id valores*/
+    text-align: center;
+}
+
+#valores i {
+    width: 100px;
+    height: 100px;
+    padding: 30px 10px;
+
+    font-size: 36px;
+    color: var(--color3);
+    border: 2px solid var(--color3);
+
+    box-shadow: 0px 5px 16px var(--color30);
+    margin-bottom: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+#valores i:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+    border: 2px solid var(--color1);
+    box-shadow: 0px 5px 25px var(--color2);
 }
 
 /*CLASSES*/ 
@@ -219,4 +313,42 @@ a {
 
 .eventos-foto {
     overflow: hidden;
+    position: relative;
+}
+
+.eventos-foto:hover .eventos-foto-leyenda {
+    display: flex;
+}
+
+.eventos-foto img {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.eventos-foto:hover img {
+    transform: scale(1.05);
+}
+
+
+
+.eventos-foto-leyenda {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 30px;
+    background-color:rgba(32,54,70,0.8) ;
+    font-size: 0.8em;
+
+    /*centrar el contenido*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    transition: all 0.3s ease-in-out;
+    display: none;
+    /*opacity: 0 tambien funciona? */
 }
