@@ -84,6 +84,12 @@ a {
     text-decoration: none; /*quitar la decoracion de este item */
 }
 /*ID*/
+#barra-ubicacion {
+    background-color: var(--color3);
+    color: var(--color1);
+    text-align: center;
+}
+
 #button-go-top {
     width: 45px;
     height: 45px;
