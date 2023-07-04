@@ -38,7 +38,9 @@ h1, h2 {
 
 h1 {
     color: white;
-    font-family: var(--fuentePrincipal)
+    font-family: var(--fuentePrincipal);
+    font-weight: 900;
+    font-size: 50px;
 }
 
 h2, h3 {
@@ -82,6 +84,10 @@ p {
 a {
     color : var(--color1);
     text-decoration: none; /*quitar la decoracion de este item */
+}
+
+video {
+    display: block;
 }
 /*ID*/
 #barra-ubicacion {
@@ -239,14 +245,9 @@ a {
     color: var(--color1);
 }
 
-/*#eventos img{
-    transition: all 0.3s ease-in-out;
+#extension-programas {
+    background-color: var(--color3);
 }
-
-#eventos img:hover{
-    transform: scale(1.05);
-    
-}*/
 
 #valores {
     background-color: var(--color4);
@@ -331,13 +332,9 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-
-
 .eventos-foto:hover img {
     transform: scale(1.05);
 }
-
-
 
 .eventos-foto-leyenda {
     position: absolute;
@@ -357,4 +354,25 @@ a {
     transition: all 0.3s ease-in-out;
     display: none;
     /*opacity: 0 tambien funciona? */
+}
+
+.opcion-seleccionada {
+    background-color: var(--color3);
+    color: var(--color1)!important; 
+}
+
+.extension-clases-profesor {
+    position: relative;
+}
+
+.extension-clases-leyenda {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.video-responsive {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
 }
