@@ -140,12 +140,12 @@ ul{
     color: var(--grisoscuro_texto);
 }
 
-#servicios servicios-2 {
+#nuestros-servicios nuestros-servicios-2 {
     background-color: var(--blanco);
     color: var(--grisoscuro_texto);
 }
 
-#servicios-2 img {
+#nuestros-servicios-2 img {
     max-width: 60%;
     height: auto;
 }
@@ -195,6 +195,10 @@ ul{
 #pie {
     background-color: var(--blanco);
     color: var(--grisoscuro_texto);
+}
+
+#tarifas .contenedor {
+   max-width: 50%; 
 }
 
 /*CLASES*/
@@ -350,6 +354,12 @@ ul{
 .img-habitaciones-style {
     border-radius: 75px 75px 75px 75px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
+}
+
+.tarifas-habitaciones {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 
