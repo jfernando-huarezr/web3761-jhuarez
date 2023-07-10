@@ -36,11 +36,11 @@
         <div class="contenido_header">
             <div class="fila">
                 <div class="columna_logo">
-                    <a href="./index.html"><img src="Imágenes/logo.jpg" alt="ajustar_ancho"></a>
+                    <a href="./index.html"><img src="Imágenes/logo.png"></a>
                 </div>
                 <ul class="menu-opciones">
                     <div class="fila">
-                    <li><a href="#">MENÚ</a></li>
+                    <li><a href="#"  class="opcion-seleccionada">MENÚ</a></li>
                     <li><a href="./paginas/servicios.html">SERVICIOS</a></li>
                     <li><a href="./paginas/habitaciones.html">HABITACIONES</a></li>
                     <li><a href="./paginas/ofertas.html">OFERTAS</a></li>
@@ -114,32 +114,47 @@
             </p>
             <div class="fila blurred">
                 <div class="columna">
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/hab_indiv.jpg" class="ajustar_ancho img-habitaciones-style">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Habitación Personal</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima molestiae sed dolores asperiores recusandae.</p>
+                        </div>                       
+                    </div>
+                    <h3>Habitación Personal</h3>
+                </div>
 
-                    <img src="Imágenes/hab_matrimonial.jpg" class="ajustar_ancho img-habitaciones-style">
-                        <h3>Habitación Matrimonial</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nemo numquam architecto, ullam corporis autem.</p>
-                    </img>
+                <div class="columna">
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/hab_matrimonial.jpg" class="ajustar_ancho img-habitaciones-style">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Habitación Matrimonial</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nemo numquam architecto, ullam corporis autem.</p>
+                        </div>                        
+                    </div>
+                    <h3>Habitación Matrimonial</h3>
                 </div>
     
                 <div class="columna">
-                    <img src="Imágenes/hab_indiv.jpg" class="ajustar_ancho img-habitaciones-style">
-                        <h3>Habitación Personal</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima molestiae sed dolores asperiores recusandae.</p>
-                    </img>
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/hab_doble.jpg" class="ajustar_ancho img-habitaciones-style">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Habitación Doble</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit enim dolorum reiciendis, veritatis ab voluptatem?</p>
+                        </div>                        
+                    </div>
+                    <h3>Habitación Doble</h3>
                 </div>
     
                 <div class="columna">
-                    <img src="Imágenes/hab_doble.jpg" class="ajustar_ancho img-habitaciones-style">
-                        <h3>Habitación Doble</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit enim dolorum reiciendis, veritatis ab voluptatem?</p>
-                    </img>
-                </div>
-    
-                <div class="columna">
-                    <img src="Imágenes/suite_presidencial.jpg" class="ajustar_ancho img-habitaciones-style box">
-                        <h3>Suite Presidencial</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, amet necessitatibus iste odit eligendi ut!</p>
-                    </img>
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/suite_presidencial.jpg" class="ajustar_ancho img-habitaciones-style box">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Suite Presidencial</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, amet necessitatibus iste odit eligendi ut!</p>
+                        </div>                        
+                    </div>    
+                    <h3>Suite Presidencial</h3>
                 </div>
     
             </div>
@@ -164,20 +179,27 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas ullam accusantium sapiente, libero, perspiciatis consequatur impedit officiis autem, aperiam excepturi temporibus fuga fugit aliquid nesciunt veritatis. Neque, rem illo.</p>
                         <button class="btn-tarifas">Mas informacion</button>
                     </div>
-                <div class="columna tarifas-habitaciones">
-                    <h3>Habitacion matrimonial</h3>
-                    <h2>$55 por noche</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae voluptatum eaque, earum quas nobis ipsum sit cumque ad debitis magni odio delectus repudiandae excepturi. Nulla aut aperiam et. Id.</p>
-                    <button class="btn-tarifas">Mas informacion</button>
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Habitacion matrimonial</h3>
+                        <h2>$55 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae voluptatum eaque, earum quas nobis ipsum sit cumque ad debitis magni odio delectus repudiandae excepturi. Nulla aut aperiam et. Id.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div> 
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Habitacion doble</h3>
+                        <h2>$65 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas ullam accusantium sapiente, libero, perspiciatis consequatur impedit officiis autem, aperiam excepturi temporibus fuga fugit aliquid nesciunt veritatis. Neque, rem illo.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div>
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Suite presidencial</h3>
+                        <h2>$75 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim assumenda commodi excepturi consectetur exercitationem. Repudiandae molestiae ullam ipsum laudantium et quidem aspernatur, eveniet quia, sunt quaerat dolorum, unde expedita.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div>
                 </div> 
-                <div class="columna tarifas-habitaciones">
-                    <h3>Suite presidencial</h3>
-                    <h2>$75 por noche</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim assumenda commodi excepturi consectetur exercitationem. Repudiandae molestiae ullam ipsum laudantium et quidem aspernatur, eveniet quia, sunt quaerat dolorum, unde expedita.</p>
-                    <button class="btn-tarifas">Mas informacion</button>
-                </div>
-            </div>
-        
+            </div> 
+        </div>      
     </section><!-- tarifas -->
 
     
