@@ -120,6 +120,13 @@ img {
     align-items: center;
 }
 
+#barra-ubicacion {
+    font-family: var(--fuenteSecundaria);
+    background-color: var(--beige_fuerte);
+    color: var(--blanco);
+    text-align: center;
+}
+
 #cabecera {
     background-color: var(--blanco); 
     color: var(--grisoscuro_texto);
@@ -189,6 +196,24 @@ img {
     color: var(--grisoscuro_texto);
 }
 
+#pagina-servicios {
+    background-color: var(--beige_fondo);
+    color: var(--grisoscuro_texto);
+}
+
+#pagina-servicios .contenedor h3 {
+    font-size: 30px;
+}
+
+#pagina-servicios .columna {
+    transition: all 0.3s ease-in-out;
+}
+
+#pagina-servicios .columna:hover {
+    transform: scale(1.05) translate(0px,-20px);;
+}
+
+
 #otros_servicios img { 
     transition: all 0.3s ease-in-out;
 }
@@ -218,13 +243,17 @@ img {
     color: var(--grisoscuro_texto);
 }
 
-#tarifas {
+#tarifas #promo-habitacion{
     color: black;
     text-shadow: 0px 1px 8px rgba(255,255,255,0.6);
 }
 
 #tarifas .contenedor {
    max-width: 70%; 
+}
+
+#promo-habitacion .contenedor {
+    max-width: 70%;
 }
 
 
@@ -238,6 +267,12 @@ img {
 .ajustar_iconos{
     width: 30%;
     display: block;
+    margin: auto;
+}
+
+.ajustar_servicios {
+    width: 70%;
+    height: auto;
     margin: auto;
 }
 
@@ -406,6 +441,11 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.tarifario-contenido > h2 {
+    font-size: 40px;
+    color: var(--grisoscuro_texto);
 }
 
 .video-responsive {
