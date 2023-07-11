@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
+
 <body>
     <header id="barra-superior">
         <div class="contenedor">
@@ -17,37 +18,37 @@
                 </div>
                 
                 <div>
-                    <a href="mailto:hotelsanignacio@hotmail.com?subject=Quiero información sobre reservas">
+                    <a href="mailto:hotelsanignacio@hotmail.com?subject=Quiero información sobre reservas" target="_blank">
                         <i class="fa-solid fa-envelope"></i>
                         hotelsanignacio@hotmail.com
                     </a>
                        
-                    <a href="tel:+5114258989">
+                    <a href="tel:+5114258989" target="_blank">
                         <i class="fa-solid fa-phone"></i>
                         (+51) 1 425-8989
                     </a>
-                </div>               
+                </div>                          
             </div>
         </div>
-    </header>
+    </header><!-- barra superior -->
 
     <header id="cabecera" class="espacio">
         <div class="contenido_header">
             <div class="fila">
                 <div class="columna_logo">
-                    <img src="Imágenes/logo.jpg" alt="ajustar_ancho">
+                    <a href="./index.html"><img src="Imágenes/logo.png"></a>
                 </div>
                 <ul class="menu-opciones">
                     <div class="fila">
-                    <li><a href="#">MENÚ</a></li>
-                    <li><a href="#">SERVICIOS</a></li>
-                    <li><a href="#">HABITACIONES</a></li>
-                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#"  class="opcion-seleccionada">MENÚ</a></li>
+                    <li><a href="./paginas/servicios.html">SERVICIOS</a></li>
+                    <li><a href="./paginas/habitaciones.html">HABITACIONES</a></li>
+                    <li><a href="./paginas/sedes.html">SEDES</a></li>
                     </div>
                 </ul>
             </div>
         </div>
-    </header>
+    </header><!-- cabecera -->
 
     <section id="banner">
         <div class="banner_contenedor ajustar_ancho">
@@ -61,7 +62,7 @@
                 <button class="banner__boton--estilo box-shdw-glow">SUITES & HABITACIONES</button>
             </div>
         </div>
-    </section>
+    </section><!-- banner -->
 
     <section id="ubicado" class="espacio">
         <div class="contenedor">
@@ -69,15 +70,16 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id soluta alias velit beatae, pariatur expedita ex fuga itaque a quis, reiciendis repudiandae earum excepturi deleniti? Sint architecto suscipit ut cum.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur quia quisquam suscipit similique asperiores, repudiandae doloremque minima ab? Odio, suscipit repellat magnam sed sapiente nostrum saepe quos provident minus?</p>
         </div>
-    </section>
-    <section id="servicios" class="espacio">
+    </section><!-- ubicado -->
+
+    <section id="nuestros-servicios" class="espacio">
         <div class="contenedor">
             <h2>Nuestros servicios</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolores dolor repudiandae. Aspernatur ad ab accusamus? Ut hic perspiciatis, eaque nulla aliquam maxime repudiandae similique suscipit blanditiis laudantium ipsum quasi minima velit quisquam dolorem rerum, beatae praesentium quo animi culpa iste quae inventore voluptatum? Unde doloribus error aperiam adipisci quidem necessitatibus dolores in, saepe, alias nesciunt nihil tempore vero enim. Culpa nulla amet ex hic eligendi enim voluptatem incidunt ipsa, doloribus distinctio temporibus praesentium debitis, eius reprehenderit quos dolor ea atque, eum magnam accusantium expedita! Ducimus odit, tenetur repellat doloribus quidem nesciunt aliquam libero eveniet dignissimos numquam mollitia quas officia.</p>
         </div>
-    </section>
+    </section><!-- nuestros servicios -->
 
-    <section id="servicios-2" class="espacio">
+    <section id="nuestros-servicios-2" class="espacio">
         <div class="contenedor">
             <div class="fila">
                 <div class="columna"><img src="./Imágenes/icon-smart-key.png" alt="icon-smart-key" ></div>
@@ -102,7 +104,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><!-- nuestros servicios 2 -->
 
     <section id="habitaciones" class="espacio">
         <div class="contenedor_habitaciones">
@@ -112,64 +114,118 @@
             </p>
             <div class="fila blurred">
                 <div class="columna">
-                    <img src="Imágenes/hab_matrimonial.jpg" class="ajustar_ancho img-habitaciones-style">
-                    <h3>Habitación Matrimonial</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nemo numquam architecto, ullam corporis autem.
-                    </p>
-                </div>
-    
-                <div class="columna">
-                    <img src="Imágenes/hab_indiv.jpg" class="ajustar_ancho img-habitaciones-style">
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/hab_indiv.jpg" class="ajustar_ancho img-habitaciones-style">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Habitación Personal</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima molestiae sed dolores asperiores recusandae.</p>
+                        </div>                       
+                    </div>
                     <h3>Habitación Personal</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse minima molestiae sed dolores asperiores recusandae.
-                    </p>
                 </div>
-    
-                <div class="columna">
-                    <img src="Imágenes/hab_doble.jpg" class="ajustar_ancho img-habitaciones-style">
-                    <h3>Habitación Doble</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit enim dolorum reiciendis, veritatis ab voluptatem?
-                    </p>
-                </div>
-    
-                <div class="columna">
-                    <img src="Imágenes/suite_presidencial.jpg" class="ajustar_ancho img-habitaciones-style box">
-                    <h3>Suite Presidencial</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, amet necessitatibus iste odit eligendi ut!
-                    </p>
-                </div>
-    
-                </div>
-            </div>
-    
-    </section>
 
-    
-    <section id="otros_servicios" class="espacio">
-        <div class="contenedor">
-            <h2>Otros servicios</h2>
-            <div class="fila">
                 <div class="columna">
-                    <img src="Imágenes/otros_servicios/peso.png" class="ajustar_iconos">
-                    <h3>Gimnasio</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quam!</p>
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/hab_matrimonial.jpg" class="ajustar_ancho img-habitaciones-style">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Habitación Matrimonial</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nemo numquam architecto, ullam corporis autem.</p>
+                        </div>                        
+                    </div>
+                    <h3>Habitación Matrimonial</h3>
                 </div>
-            <div class="columna">
-                <img src="Imágenes/otros_servicios/piscina.png" class="ajustar_iconos">
-                <h3>Piscina</h3>
-                <hp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita?</p>
-            </div> 
-            <div class="columna">
-                <img src="Imágenes/otros_servicios/reunion.png" class="ajustar_iconos">
-                <h3>Espacio para reuniones</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestiae!</p>
+    
+                <div class="columna">
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/hab_doble.jpg" class="ajustar_ancho img-habitaciones-style">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Habitación Doble</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit enim dolorum reiciendis, veritatis ab voluptatem?</p>
+                        </div>                        
+                    </div>
+                    <h3>Habitación Doble</h3>
+                </div>
+    
+                <div class="columna">
+                    <div class="habitaciones-imagen">
+                        <img src="Imágenes/suite_presidencial.jpg" class="ajustar_ancho img-habitaciones-style box">
+                        <div class="habitaciones-leyenda ocultar">
+                            <h3>Suite Presidencial</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, amet necessitatibus iste odit eligendi ut!</p>
+                        </div>                        
+                    </div>    
+                    <h3>Suite Presidencial</h3>
+                </div>
+    
             </div>
         </div>
-    </section>
+    
+    </section><!-- habitaciones -->
+
+    <section id="tarifas">
+
+        <div class="tarifario-habitaciones-video">
+
+            <video autoplay loop muted class="video-responsive">
+                <source src="../videos/hotel-view.mp4" type="video/mp4">
+            </video>
+
+            <div class="contenedor tarifario-contenido">
+                <h2 class="espacio txt-shdw-glow">Los mejores precios</h2>
+                <div class="fila">
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Habitacion personal</h3>
+                        <h2>$45 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas ullam accusantium sapiente, libero, perspiciatis consequatur impedit officiis autem, aperiam excepturi temporibus fuga fugit aliquid nesciunt veritatis. Neque, rem illo.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div>
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Habitacion matrimonial</h3>
+                        <h2>$55 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae voluptatum eaque, earum quas nobis ipsum sit cumque ad debitis magni odio delectus repudiandae excepturi. Nulla aut aperiam et. Id.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div> 
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Habitacion doble</h3>
+                        <h2>$65 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas ullam accusantium sapiente, libero, perspiciatis consequatur impedit officiis autem, aperiam excepturi temporibus fuga fugit aliquid nesciunt veritatis. Neque, rem illo.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div>
+                    <div class="columna tarifas-habitaciones">
+                        <h3>Suite presidencial</h3>
+                        <h2>$75 por noche</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim assumenda commodi excepturi consectetur exercitationem. Repudiandae molestiae ullam ipsum laudantium et quidem aspernatur, eveniet quia, sunt quaerat dolorum, unde expedita.</p>
+                        <button class="btn-tarifas">Mas informacion</button>
+                    </div>
+                </div> 
+            </div> 
+        </div>      
+    </section><!-- tarifas -->
+
+    
+    <section id="otros_servicios" class="espacio">    
+            <div class="contenedor">
+                <h2 class="espacio">Otros servicios</h2>
+                <div class="fila">
+                    <div class="columna">
+                        <img src="Imágenes/otros_servicios/peso.png" class="ajustar_iconos">
+                        <h3>Gimnasio</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, quam!</p>
+                    </div>
+                    <div class="columna">
+                        <img src="Imágenes/otros_servicios/piscina.png" class="ajustar_iconos">
+                        <h3>Piscina</h3>
+                        <hp>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita?</p>
+                    </div> 
+                        <div class="columna">
+                        <img src="Imágenes/otros_servicios/reunion.png" class="ajustar_iconos">
+                        <h3>Espacio para reuniones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestiae!</p>
+                    </div>
+                </div>
+            </div>
+    </section><!-- otros servicios -->
+
     <footer class="footer">
 
         <div class="contenedor_footer">
@@ -199,11 +255,11 @@
                 <div class="footer-links">
                     <h5>Síguenos</h5>
                     <ul>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-pinterest"></i>
+                        <a href="https://www.facebook.com/SheratonLima/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/SheratonLima" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/sheratonlima/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/sheratonhotels" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.pinterest.com/sheraton/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
                     </ul>
                 </div>
             </div>
@@ -211,7 +267,11 @@
                 &copy; 2023, Hotel San Ignacio. Todos los derechos reservados
             </div>
         </div>
-    </footer>
+    </footer><!-- footer -->
+
+    <a href="#" id="button-go-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </a> <!-- boton top -->
 
 </body>
 </html>

@@ -7,6 +7,7 @@
     --blanco: #f4f4f4;
     --grisclaro_fondo:#5C5C5C;
     --grisclaro_texto:#bbbbbb;
+    --beige_fuerte: #9c8565;
 
     /* variables para fuentes*/
     --fuentePrincipal:'Sofia Sans', sans-serif;
@@ -16,6 +17,23 @@
 * {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box; /* Establece el width sea el ancho final de la caja (incluendo padding y border */
+    /*siempe es bueno ponerlo aqui par que los cambios en paddings y margins no afecten la visualizacion de la pagina*/
+}
+
+/*animaciones keyframes*/
+@keyframes flip-horizontal-bottom {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(-360deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -62,6 +80,17 @@ ul{
     list-style-type: none;
 }
 
+video {
+    display: block;
+}
+
+img {
+    display: block;
+}
+
+
+/*IDs*/
+
 #banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Imágenes/banner.jpg");
     background-repeat: no-repeat;
@@ -91,6 +120,13 @@ ul{
     align-items: center;
 }
 
+#barra-ubicacion {
+    font-family: var(--fuenteSecundaria);
+    background-color: var(--beige_fuerte);
+    color: var(--blanco);
+    text-align: center;
+}
+
 #cabecera {
     background-color: var(--blanco); 
     color: var(--grisoscuro_texto);
@@ -99,6 +135,7 @@ ul{
 
     position: sticky;
     top: 0px;
+    z-index: 99999;
 }
 
 #cabecera a {
@@ -131,12 +168,12 @@ ul{
     color: var(--grisoscuro_texto);
 }
 
-#servicios servicios-2 {
+#nuestros-servicios nuestros-servicios-2 {
     background-color: var(--blanco);
     color: var(--grisoscuro_texto);
 }
 
-#servicios-2 img {
+#nuestros-servicios-2 img {
     max-width: 60%;
     height: auto;
 }
@@ -159,6 +196,24 @@ ul{
     color: var(--grisoscuro_texto);
 }
 
+#pagina-servicios {
+    background-color: var(--beige_fondo);
+    color: var(--grisoscuro_texto);
+}
+
+#pagina-servicios .contenedor h3 {
+    font-size: 30px;
+}
+
+#pagina-servicios .columna {
+    transition: all 0.3s ease-in-out;
+}
+
+#pagina-servicios .columna:hover {
+    transform: scale(1.05) translate(0px,-20px);;
+}
+
+
 #otros_servicios img { 
     transition: all 0.3s ease-in-out;
 }
@@ -167,10 +222,47 @@ ul{
     transform: scale(1.05);
 }
 
+#button-go-top {
+    width: 45px;
+    height: 45px;
+    background-color: var(--beige_fondo);
+    color: var(--grisoscuro_texto);
+    border: 1px solid var(--grisoscuro_texto);
+
+    /*posicionamiento de caja*/
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    line-height: 45px; /*para centrar verticalmente. Si le pongo la misma altura de la caja (en este caso 45px), lo centra*/
+    transition: all 0.3s ease-in-out;
+}
+
 #pie {
     background-color: var(--blanco);
     color: var(--grisoscuro_texto);
 }
+
+#tarifas #promo-habitacion{
+    color: black;
+    text-shadow: 0px 1px 8px rgba(255,255,255,0.6);
+}
+
+#tarifas .contenedor {
+   max-width: 70%; 
+}
+
+#promo-habitacion .contenedor {
+    max-width: 70%;
+}
+
+#sedes {
+    text-align: center;
+    margin: auto;
+}
+
+
+/*CLASES*/
 
 .ajustar_ancho{
     width:100%;
@@ -180,6 +272,12 @@ ul{
 .ajustar_iconos{
     width: 30%;
     display: block;
+    margin: auto;
+}
+
+.ajustar_servicios {
+    width: 70%;
+    height: auto;
     margin: auto;
 }
 
@@ -224,6 +322,11 @@ ul{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.columna_logo {
+    width: 20%;
+    height: auto;
 }
 
 .fila {
@@ -324,5 +427,84 @@ ul{
     border-radius: 75px 75px 75px 75px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.11);
 }
+
+.tarifas-habitaciones {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(239, 234, 228, 0.5);
+}
+
+.tarifario-habitaciones-video {
+    position: relative;
+}
+
+.tarifario-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tarifario-contenido > h2 {
+    font-size: 40px;
+    color: var(--grisoscuro_texto);
+}
+
+.video-responsive {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
+.btn-tarifas {
+    padding: 10px;
+    font-family: var(--fuenteSecundaria);
+    background-color: var(--beige_fuerte);
+    border-style: none;
+}
+
+.tarifario-contenido .columna:hover {
+	animation: flip-horizontal-bottom 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.habitaciones-imagen {
+    position: relative;
+    overflow: hidden;
+}
+
+.habitaciones-leyenda {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 30px;
+    background-color: rgba(125, 106, 80, 0.5);
+    border-radius: 75px 75px 75px 75px;
+    font-size: 0.8em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+
+.habitaciones-imagen:hover .habitaciones-leyenda{
+    display: flex;
+}
+
+.opcion-seleccionada {
+    background-color: var(--beige_fuerte);
+    color: var(--grisoscuro_texto)!important; 
+}
+
 
 
