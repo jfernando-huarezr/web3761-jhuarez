@@ -1,0 +1,109 @@
+/*Creacion de los breakpoint de pantalla para el diseño web responsive*/
+
+/*para una pantalla de tamaño estandar de laptop (aprox 1200px) */
+@media screen and (max-width:1200px) {
+    .contenedor {
+        max-width: 90%;
+    }
+
+    #admision {
+        font-size: 0.8em;
+    }
+    
+}
+
+/*para una pantalla de tamaño estandar de tablet (aprox 768px) */
+@media screen and (max-width:768px) {
+    #banner {
+        /*desactivar posicionamiento de cajas*/
+        position: static;
+    }
+
+    #admision {
+        /*desactivar posicionamiento de cajas*/
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    #alumnos .fila .columna {
+        max-width: 50%;
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+
+    #alumnos .fila {
+        flex-wrap: wrap;
+    }
+
+    #valores .fila .columna {
+        max-width: 50%;
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+
+    #valores .fila {
+        flex-wrap: wrap;
+    }
+
+    #eventos .fila .columna {
+        margin-bottom: 30px;
+    }
+
+    #eventos .fila {
+        flex-direction: column;
+    }
+
+}
+
+/*para una pantalla de tamaño estandar de celular (aprox 400px) */
+@media screen and (max-width:400px) {
+    .contenedor {
+        max-width: 95%;
+    }
+
+    #barra-superior .fila {
+        justify-content: center;
+    }
+
+    body {
+        font-size: 0.8em;
+    }
+
+    .menu-bar .fila {
+        flex-direction: column;
+    }
+
+    .menu-opciones .fila {
+        flex-direction: row;
+    }
+
+    #cabecera .menu-opciones a {
+        padding: 10px 5px;
+    }
+
+    #programas .fila {
+        flex-direction: column;
+    }
+
+    #programas .fila .columna {
+        margin-bottom: 30px;
+    }
+
+    #alumnos .fila .columna {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    #valores .fila .columna {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    #pie .fila {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
